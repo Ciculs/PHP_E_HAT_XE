@@ -11,7 +11,7 @@
 
 ### Bài 2:
 
-[Bài1](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab1/bai2.php)
+[Bài2](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab1/bai2.php)
 
 > ![imgs](/imgs/bai2.png)
 
