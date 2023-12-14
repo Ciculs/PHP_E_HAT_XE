@@ -27,9 +27,9 @@
 
 ### Bài 2:
 
-[Bài1](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab2/bai1.php)
+[Bài1](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab2/bai2.php)
 
-> ![imgs](/imgs/bai1lab2.png)
+> ![imgs](/imgs/bai2lab2.png)
 
 
 ### Bài 3:
