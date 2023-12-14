@@ -1,6 +1,6 @@
 # PHP_E_HAT_XE
 
-**LINK TEST: https://ciculs.id.vn/PHP_E_HAT_XE**
+<h1 align="center">**LINK TEST: https://ciculs.id.vn/PHP_E_HAT_XE**
 
 ## LAB 1:
 
