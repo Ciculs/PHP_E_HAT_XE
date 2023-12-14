@@ -27,21 +27,21 @@
 
 ### Bài 2:
 
-[Bài1](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab2/bai2.php)
+[Bài2](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab2/bai2.php)
 
 > ![imgs](/imgs/bai2lab2.png)
 
 
 ### Bài 3:
 
-[Bài1](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab2/bai3.php)
+[Bài3](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab2/bai3.php)
 
 > ![imgs](/imgs/bai3lab2.png)
 
 
 ### Bài 4:
 
-[Bài1](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab2/bai4.php)
+[Bài4](https://github.com/Ciculs/PHP_E_HAT_XE/blob/main/lab2/bai4.php)
 
 > ![imgs](/imgs/bai4lab2.png)
 
