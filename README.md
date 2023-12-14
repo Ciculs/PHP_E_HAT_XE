@@ -4,4 +4,7 @@
 
 ### Bài 1:
 
-!\[imgs\]
+\[Bài1\]
+
+> ![imgs](/imgs/bai1.png)
+
