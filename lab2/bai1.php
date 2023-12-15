@@ -29,7 +29,7 @@ if (isset($_POST['calculate'])) {
 
     
     if (is_numeric($a) && is_numeric($b)) {
-        if ($a > 0) {
+        if ($a != 0) {
             if ($b != 0) {
                 $result = -$b / $a;
             }else{
