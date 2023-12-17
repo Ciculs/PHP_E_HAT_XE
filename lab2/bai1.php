@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h2>Phương trình bậc nhất ax+b=c</h2>
+<h2>Phương trình bậc nhất ax+b=0</h2>
 
 <form method="post" action="">
     <label for="a"></label>
