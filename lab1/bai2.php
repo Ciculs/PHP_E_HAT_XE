@@ -29,14 +29,16 @@ if (isset($_POST['calculate'])) {
 
     
     if (is_numeric($a) && is_numeric($b)) {
-        $tong = $a + $b;
-        $hieu = $a - $b;
-        $tich = $a * $b;
-        $thuong = $a / $b;
-        echo "<p>Addition: $tong</p>";
-        echo "<p>Subtraction: $hieu</p>";
-        echo "<p>Multiplication: $tich</p>";
-        echo "<p>Division = $thuong</p>";
+        if ($b!=0){
+            $thuong = $a / $b;
+        }else{
+            $thuong = "Vô nghiệm";
+        }
+        echo "<br>";
+        echo "Addition:". ($a+$b) ."<br>";
+        echo "Subtraction:". ($a-$b) ."<br>";
+        echo "Multiplication:". ($a*$b) ."<br>";
+        echo "Division: $thuong";
     } else {
         $result = "Nhập số.";
         echo "<p>Loi: $result</p>";
