@@ -27,7 +27,7 @@ if (isset($_POST['calculate'])) {
             $sum += $i;
         }
     } else {
-        $result = "<p>Nhập số.</p>";
+        $result = "Nhập số.";
     }
     echo "<p>Sum: $sum</p>";
 }
