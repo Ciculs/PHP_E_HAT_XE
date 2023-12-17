@@ -27,7 +27,7 @@ if (isset($_POST['calculate'])) {
             $fac *= $i;
         }
     } else {
-        $result = "<p>Nhập số.</p>";
+        $result = "Nhập số.";
     }
     echo "<p>Giai thừa của 1->$n là: $fac</p>";
 }
