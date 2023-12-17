@@ -22,14 +22,16 @@ if (isset($_POST['calculate'])) {
     $n = $_POST['n'];
     $sum = 0;
     
-    if (is_numeric($n)) {
+    if (is_numeric($n) && $n >= 0) {
         for ($i = 1; $i <= $n; $i++) {
             $sum += $i;
         }
-    } else {
+        echo "<p>Sum: $sum</p>";
+    }elseif($n < 0){
+        echo "<p>Số nhập vào phải lớn hơn 0</p>";
+    }else{
         $result = "Nhập số.";
     }
-    echo "<p>Sum: $sum</p>";
 }
 ?>
 
