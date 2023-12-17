@@ -35,13 +35,11 @@ if (isset($_POST['calculate'])) {
             }else{
                 $result = 0;
             }
-        }else if ($b = 0){
-            $result = "PT Vô số nghiệm";
         }else{
             $result = "PT không có nghiệm";
-        }      
+        }
     } else {
-        $result = "<p>Nhập số.</p>";
+        $result = "Nhập số.";
     }
     echo "<p>Kết quả = $result</p>";
 }
