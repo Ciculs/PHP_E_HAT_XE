@@ -33,14 +33,14 @@ if (isset($_POST['calculate'])) {
         $hieu = $a - $b;
         $tich = $a * $b;
         $thuong = $a / $b;
+        echo "<p>Addition: $tong</p>";
+        echo "<p>Subtraction: $hieu</p>";
+        echo "<p>Multiplication: $tich</p>";
+        echo "<p>Division = $thuong</p>";
     } else {
         $result = "Nhập số.";
+        echo "<p>Loi: $result</p>";
     }
-    echo "<p>Addition: $tong</p>";
-    echo "<p>Subtraction: $hieu</p>";
-    echo "<p>Multiplication: $tich</p>";
-    echo "<p>Division = $thuong</p>";
-    echo "<p>Loi: $result</p>";
 }
 ?>
 
