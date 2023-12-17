@@ -36,7 +36,7 @@ if (isset($_POST['calculate'])) {
                 $result = 0;
             }
         }else if ($b = 0){
-            $result = "PT Vô số nghiệm"
+            $result = "PT Vô số nghiệm";
         }else{
             $result = "PT không có nghiệm";
         }      
