@@ -1,7 +1,7 @@
 # PHP_E_HAT_XE
 
 <h1 align="center">LINK TEST: https://ciculs.id.vn/PHP_E_HAT_XE </h1>
-<h2 align="center">Edge not recommend</h2>
+<h2 align="center">Edge not recommended</h2>
 
 ## LAB 1:
 
