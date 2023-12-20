@@ -22,14 +22,20 @@ if (isset($_POST['calculate'])) {
     $n = $_POST['n'];
     $fac = 1;
     
-    if (is_numeric($n)) {
+    if (is_numeric($n) && $n > 0) {
         for ($i = 1; $i <= $n; $i++) {
             $fac *= $i;
         }
+        echo "<p>Giai thừa của $n là: $fac</p>";
+    }elseif ($n < 0){
+        $n = -$n;
+        for ($i = 1; $i <= $n; $i++) {
+        $fac *= $i;
+        }
+        echo "<p>Giai thừa của -$n là: -$fac</p>";   
     } else {
-        $result = "Nhập số.";
+        echo "<p>Nhập số.</p>";
     }
-    echo "<p>Giai thừa của 1->$n là: $fac</p>";
 }
 ?>
 
