@@ -105,8 +105,8 @@ if (isset($_POST['register'])){
         }
         return true;
     }
-
-    if(!preg_match('/[!@#$%^&*(),.?":{}|<>]/', $username)){ //check xem username có kí tự đặc biệt không.
+    
+    if(!preg_match('/[!@#$%^&*(),.?":{}|<>]/', $username) && !empty($username)){ //check xem username có kí tự đặc biệt không.
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) { //check email có đúng định dạng không.
             if (isExists($email, $username, $conn)) { //check xem tài khoản hoặc email có trùng không.
                 echo "<script type='text/javascript'>alert('Exists.');</script>";
