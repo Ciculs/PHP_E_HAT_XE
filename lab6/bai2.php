@@ -149,6 +149,8 @@ if (isset($_POST['detail']) && is_numeric($_POST['id'])) {
     } else {
         echo "<div class='myClass'>No student found with ID: " . $_POST['id'] . "<br></div>";
     }
+}else{
+    echo "<div class='myClass'>ID phải là số.</div>";
 }
 ?>
 </div>
@@ -203,6 +205,39 @@ if (isset($_POST['edit'])) {
     }
 }
 ?>
+</div>
+<div>
+    <h2>Remove Student</h2>
+    <form method="post" action="">
+        <label for="name">ID:</label>
+        <input type="text" name="id" placeholder="1" required><br>
+
+        <input type="submit" name="remove" value="Remove">
+    </form>
+    <?php
+    $hostname = 'localhost';
+    $username = 'root';
+    $password = '';
+    $database = 'ehc';
+    //add code to remove student from database
+    $conn = new mysqli($hostname, $username, $password, $database);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    if (isset($_POST['remove']) && is_numeric($_POST['id'])) {
+        $sql = "DELETE FROM students WHERE id='" . $_POST['id'] . "'";
+        $result = mysqli_query($conn, $sql);
+    
+        if ($result) {
+            echo "<div class='myClass'>Student with ID: " . $_POST['id'] . " has been removed<br>";
+        } else {
+            echo "<div class='myClass'>No student found with ID: " . $_POST['id'] . "<br></div>";
+        }
+    }else{
+        echo "<div class='myClass'>ID phải là số.</div>";
+    }
+    ?>
 </div>
 </div>
 </body>
