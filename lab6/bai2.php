@@ -136,21 +136,23 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-if (isset($_POST['detail']) && is_numeric($_POST['id'])) {
-    $sql = "SELECT id, ten, email, sdt FROM students WHERE id='" . $_POST['id'] . "'";
-    $result = mysqli_fetch_assoc(mysqli_query($conn, $sql));
-
-    if ($result) {
-        echo "<div class='myClass'>ID: " . $result["id"] . "<br></div>";
-        echo "<div class='myClass'>Ten: " . $result["ten"] . "<br></div>";
-        echo "<div class='myClass'>Email: " . $result["email"] . "<br></div>";
-        echo "<div class='myClass'>SDT: " . $result["sdt"] . "<br></div>";
-        echo "<div class='myClass'>-------------------------------------<br></div>";
-    } else {
-        echo "<div class='myClass'>No student found with ID: " . $_POST['id'] . "<br></div>";
+if (isset($_POST['detail'])){
+    if (is_numeric($_POST['id'])) {
+        $sql = "SELECT id, ten, email, sdt FROM students WHERE id='" . $_POST['id'] . "'";
+        $result = mysqli_fetch_assoc(mysqli_query($conn, $sql));
+    
+        if ($result) {
+            echo "<div class='myClass'>ID: " . $result["id"] . "<br></div>";
+            echo "<div class='myClass'>Ten: " . $result["ten"] . "<br></div>";
+            echo "<div class='myClass'>Email: " . $result["email"] . "<br></div>";
+            echo "<div class='myClass'>SDT: " . $result["sdt"] . "<br></div>";
+            echo "<div class='myClass'>-------------------------------------<br></div>";
+        } else {
+            echo "<div class='myClass'>No student found with ID: " . $_POST['id'] . "<br></div>";
+        }
+    }else{
+        echo "<div class='myClass'>ID phải là số.</div>";
     }
-}else{
-    echo "<div class='myClass'>ID phải là số.</div>";
 }
 ?>
 </div>
@@ -225,17 +227,19 @@ if (isset($_POST['edit'])) {
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    if (isset($_POST['remove']) && is_numeric($_POST['id'])) {
-        $sql = "DELETE FROM students WHERE id='" . $_POST['id'] . "'";
-        $result = mysqli_query($conn, $sql);
-    
-        if ($result) {
-            echo "<div class='myClass'>Student with ID: " . $_POST['id'] . " has been removed<br>";
-        } else {
-            echo "<div class='myClass'>No student found with ID: " . $_POST['id'] . "<br></div>";
+    if (isset($_POST['remove'])){
+        if (is_numeric($_POST['id'])) {
+            $sql = "DELETE FROM students WHERE id='" . $_POST['id'] . "'";
+            $result = mysqli_query($conn, $sql);
+        
+            if ($result) {
+                echo "<div class='myClass'>Student with ID: " . $_POST['id'] . " has been removed<br>";
+            } else {
+                echo "<div class='myClass'>No student found with ID: " . $_POST['id'] . "<br></div>";
+            }
+        }else{
+            echo "<div class='myClass'>ID phải là số.</div>";
         }
-    }else{
-        echo "<div class='myClass'>ID phải là số.</div>";
     }
     ?>
 </div>
